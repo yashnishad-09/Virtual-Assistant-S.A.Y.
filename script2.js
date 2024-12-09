@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
             navoff.checked = false;
         }
     });
-
 });
 
 
@@ -40,24 +39,46 @@ document.getElementById("about").addEventListener("click", () => {
 });
 
 //popup box ko hide krne ke liye
-document.addEventListener("DOMContentLoaded", () => {
-    const popup = document.getElementById("pbox3");
+const helpLink = document.getElementById('help');
+const feedbackLink = document.getElementById('feedback');
+const helpPopup = document.getElementById('pbox3');
+const feedbackPopup = document.getElementById('pbox4');
 
-    function hidePopup(event) {
-        if (!popup.contains(event.target) && event.target.id !== "home" && event.target.id !== "help" && event.target.id !== "feedback" && event.target.id !== "about") {
-            popup.style.display = "none";
-        }
-    }
+function hideAllPopups() {
+    helpPopup.style.display = 'none';
+    feedbackPopup.style.display = 'none';
+}
 
-    document.addEventListener("click", hidePopup);
-
-    ["home", "help", "feedback", "about"].forEach(id => {
-        document.getElementById(id).addEventListener("click", (event) => {
-            event.stopPropagation(); 
-            popup.style.display = "block";
-        });
-    });
+helpLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation(); 
+    hideAllPopups();
+    helpPopup.style.display = 'block';
 });
+
+feedbackLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation(); 
+    hideAllPopups();
+    feedbackPopup.style.display = 'block';
+});
+
+document.addEventListener('click', (e) => {
+    if (!e.target.closest('.popup') && e.target.id !== 'help' && e.target.id !== 'feedback') {
+        hideAllPopups();
+    }
+});
+
+helpPopup.addEventListener('click', (e) => {
+    e.stopPropagation(); 
+});
+
+feedbackPopup.addEventListener('click', (e) => {
+    e.stopPropagation(); 
+});
+
+
+
 
 //speak function controls
     function speak(text) {
