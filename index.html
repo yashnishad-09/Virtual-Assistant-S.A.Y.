@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S.A.Y,My virtual assistant</title>
+  <link rel="shortcut icon" href="/assets/logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body> 
+  <img src="/assets/logo.jpg" alt="Logo" id="logo" />
+
+
+  <div class="mainbox">
+    <input type="checkbox" id="checkbox">
+    <div class="btn_one">
+      <label for="checkbox">
+        <i class="fa-duotone fa-solid fa-bars"></i>
+      </label>
+    </div>
+
+    <div class="nav" id="navbar">
+      <div class="btn_two">
+        <label for="checkbox">
+          <i class="fa-sharp-duotone fa-solid fa-xmark"></i></i>
+        </label>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="#" id="home">Home</a>
+          </li>
+          <li>
+            <a href="about.html" id="about">About Us</a>
+          </li>
+          <li>
+            <a href="#" id="help">Help</a>
+          </li>
+          <li>
+            <a href="#" id="feedback">Feedback</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div id="pbox3" class="popup">
+       <p>Here to assist. You can say commands like 'Open YouTube,' 'Check the weather,' or 'What is the time?'</p> 
+ </div>
+  <div id="pbox4" class="popup">
+       <p>You can provide feedback by sending an email or comment.</p> 
+ </div>
+
+  <h1>I'm <span id="name"> S.A.Y </span>, Your <span id="va">Virtual Assistant</span></h1>
+
+  <img src="/assets/voice.gif" alt="voice" id="voice">
+  <div id="searchContainer">
+    <button id="btn"><img src="/assets/mic.svg" alt="mic"><span id="content"> </span> </button>
+  </div>
+
+
+  <div id="wrapper">
+    <input type="text" id="searchInput" placeholder="Type your command here..." />
+    <button id="searchBtn">Search</button>
+  </div>
+
+  <body>
+
+    <div id="SearchHistoryContainer" style="color: white;"></div>
+    <script src="script2.js"></script>
+  </body>
+
+</html>

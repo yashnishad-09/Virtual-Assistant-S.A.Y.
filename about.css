@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    overflow:hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:center;
+}
+
+#Yash, #Shreyansh, #Anuj {
+    border: 2px solid white;
+    border-radius: 100rem;
+    height: 14rem;
+    width: 14rem;
+    margin: 20px 47px;
+    transition: 1s;
+    background-size: cover;
+}
+
+#Yash {
+    background-image: url(/assets/yash.jpg);
+}
+
+#Shreyansh {
+    background-image: url(/assets/shreyan.jpg);
+}
+
+#Anuj {
+    background-image: url(/assets/anuj.jpg);
+}
+
+#parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#Yash:hover, #Shreyansh:hover, #Anuj:hover {
+    box-shadow: 0px 0px 20px 8px rgb(255, 255, 255); 
+}
+
+.box1, .box2, .box3 {
+    height: 17rem;
+    width: 20rem;
+    border: 0.1rem solid white;
+    display: inline-block;
+    margin: 50px 50px;
+    border-radius: 25px;
+    transition: 1s;
+    
+}
+
+.profile {
+    margin-top: 3rem;
+    display: none;
+    
+    
+}
+
+@media (min-height: 17rem) {
+    .profile {
+        display: block;
+    }
+}
+
+.box1:hover, .box2:hover, .box3:hover, .profile:hover {
+    box-shadow: 0px 0px 20px 8px rgb(255, 255, 255); 
+    height: 34rem; 
+    visibility: visible; 
+    opacity: 1;
+    font-size:20px;
+}
+
+
+@media (max-width: 1200px) {
+    #Yash, #Shreyansh, #Anuj {
+        height: 12rem;
+        width: 12rem;
+        margin: 15px 35px;
+    }
+
+    .box1, .box2, .box3 {
+        height: 15rem;
+        width: 18rem;
+    }
+
+    .box1:hover, .box2:hover, .box3:hover, .profile:hover {
+        height: 34rem;
+        font-size:20px;
+    }
+}
+
+@media (max-width: 800px) {
+    #parent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Yash, #Shreyansh, #Anuj {
+        height: 10rem;
+        width: 10rem;
+        margin: 10px 25px;
+    }
+
+    .box1, .box2, .box3 {
+        height: 13rem;
+        width: 16rem;
+    }
+
+    .box1:hover, .box2:hover, .box3:hover, .profile:hover {
+        height: 30rem;
+        font-size:20px;
+    }
+}
+
+@media (max-width: 500px) {
+    #Yash, #Shreyansh, #Anuj {
+        height: 8rem;
+        width: 8rem;
+        margin: 5px 15px;
+    }
+
+    .box1, .box2, .box3 {
+        height: 11rem;
+        width: 14rem;
+    }
+
+    .box1:hover, .box2:hover, .box3:hover, .profile:hover {
+        height: 28rem;
+        font-size:20px;
+    }
+}
+
+footer { 
+    background-color: #242323; 
+    color: white; 
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    opacity: 100%;
+     }
+
+.thank{
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem 0;
+    font-weight: bolder;
+    
+}
