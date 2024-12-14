@@ -18,7 +18,9 @@ body {
     gap: 30px;
     flex-direction: column;
     font-family: "Protest Guerrilla", sans-serif;
+    
 }
+
 
 
 #logo {
@@ -330,14 +332,16 @@ body {
     width: 50%;
     height: 50%;
     overflow: auto;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.241);
     padding: 50px;
-    
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 0px 20px 10px rgb(255, 255, 255);
 }
 
 #searchHistoryContainer {
     color: white;
-    border: 1px solid red; /* Temporary border for visibility */
     padding: 10px;
     margin-top: 20px;
     height: 100px;
