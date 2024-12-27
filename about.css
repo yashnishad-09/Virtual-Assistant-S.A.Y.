@@ -32,7 +32,7 @@
 }
 
 #parent {
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -150,4 +150,8 @@ footer {
     margin: 2rem 0;
     font-weight: bolder;
     
+}
+
+.content{
+    font-size: 28px ;
 }
