@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Assistant - SAY</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul>
+                <li id="home">Home</li>
+                <li id="help">Help</li>
+                <li id="feedback">Feedback</li>
+                <li id="about">About</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Interactive Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to SAY</h1>
+            <p>Your personal virtual assistant. Manage tasks, get information, and more at your command!</p>
+            <button id="get-started-btn">Get Started</button>
+        </div>
+        <div class="hero-animation">
+            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_rwq6ciql.json" background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay></lottie-player>
+
+        </div>
+    </section>
+
+    <main>
+        <!-- Existing Sections -->
+        <section id="main-content">
+            <div id="voice-box">
+                <button id="btn">Activate Voice Command</button>
+                <div id="voice" style="display:none;">Listening...</div>
+            </div>
+            <div id="search-box">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button id="searchBtn">Search</button>
+            </div>
+            <div id="content">Say Something...</div>
+            <div id="SearchHistoryContainer"></div>
+        </section>
+
+        <!-- Popups -->
+        <div id="pbox3" class="popup">Help Popup Content</div>
+        <div id="pbox4" class="popup">Feedback Popup Content</div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

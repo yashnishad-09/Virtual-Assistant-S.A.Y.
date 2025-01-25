@@ -5,6 +5,20 @@ let searchInput = document.querySelector("#searchInput");
 let searchBtn = document.querySelector("#searchBtn");
 
 
+
+
+// const image = document.querySelector(".history");
+// const checkbox = document.getElementById("checkbox2");
+
+
+// image.addEventListener("click", function() {
+//   checkbox.checked = !checkbox.checked; 
+// });
+
+
+
+
+
 //document me kahi bhi click krenge to navbar off hojaega...
 document.addEventListener("DOMContentLoaded", () => {
     const navoff = document.getElementById("checkbox");
@@ -43,10 +57,15 @@ const helpLink = document.getElementById('help');
 const feedbackLink = document.getElementById('feedback');
 const helpPopup = document.getElementById('pbox3');
 const feedbackPopup = document.getElementById('pbox4');
+const historybox = document.getElementById('bottom2');
+const historybutton = document.getElementById('history123');
+
 
 function hideAllPopups() {
     helpPopup.style.display = 'none';
     feedbackPopup.style.display = 'none';
+    historybox.style.display = 'none';
+    
 }
 
 helpLink.addEventListener('click', (e) => {
@@ -63,8 +82,15 @@ feedbackLink.addEventListener('click', (e) => {
     feedbackPopup.style.display = 'block';
 });
 
+history123.addEventListener('click' , (e) =>{
+    e.preventDefault();
+    e.stopPropagation();
+    hideAllPopups();
+    historybox.style.display = 'block';
+});
+
 document.addEventListener('click', (e) => {
-    if (!e.target.closest('.popup') && e.target.id !== 'help' && e.target.id !== 'feedback') {
+    if (!e.target.closest('.popup') && e.target.id !== 'help' && e.target.id !== 'feedback' !== 'bottom2') {
         hideAllPopups();
     }
 });
@@ -76,6 +102,10 @@ helpPopup.addEventListener('click', (e) => {
 feedbackPopup.addEventListener('click', (e) => {
     e.stopPropagation(); 
 });
+
+// history.addEventListener('click' , (e) =>{
+//     e.stopPropagation(); 
+// })
 
 
 
@@ -194,16 +224,16 @@ feedbackPopup.addEventListener('click', (e) => {
         document.getElementById("voice").style.display = "none" ;
         document.getElementById("btn").style.display = "flex";
 
-//        console.log("Command Received: ", command);
+    //    console.log("Command Received: ", command);
         searchHistory.push(command);
         displaySearchHistory();
-//        console.log("History Updated: ", searchHistory);
+    //    console.log("History Updated: ", searchHistory);
     
 
         // searchHistory ke liye 
         function displaySearchHistory(){
 //            console.log("Displaying");
-            const historyContainer = document.getElementById("SearchHistoryContainer");
+            const historyContainer = document.getElementById("bottom2");
             historyContainer.innerHTML = "" ;
 
             searchHistory.forEach((query , index) =>{

@@ -20,19 +20,19 @@
 }
 
 #Yash {
-    background-image: url(/assets/yash.jpg);
+    background-image: url(assets/yash.jpg);
 }
 
 #Shreyansh {
-    background-image: url(/assets/shreyan.jpg);
+    background-image: url(assets/shreyan.jpg);
 }
 
 #Anuj {
-    background-image: url(/assets/anuj.jpg);
+    background-image: url(assets/anuj.jpg);
 }
 
 #parent {
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -142,12 +142,22 @@ footer {
     width: 100%;
     bottom: 0;
     opacity: 100%;
-     }
+ }
 
 .thank{
+    color:#ecf0f1;
     text-align: center;
     font-size: 3rem;
     margin: 2rem 0;
     font-weight: bolder;
+
     
+}
+
+.content{
+    font-size: 28px ;
+}
+a{
+    text-decoration:none;
+    color:rgb(97, 176, 210)
 }

@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar li {
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+#navbar li:hover {
+  color: #00bcd4;
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #00bcd4, #2196f3);
+  padding: 50px 20px;
+  color: white;
+  min-height: 80vh;
+}
+
+.hero-content {
+  max-width: 50%;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+#hero #get-started-btn {
+  background: white;
+  color: #2196f3;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#hero #get-started-btn:hover {
+  background: #00bcd4;
+  color: white;
+  transform: scale(1.05);
+}
+
+.hero-animation img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Main Section */
+#main-content {
+  padding: 20px;
+  text-align: center;
+}
+
+#voice-box, #search-box {
+  margin: 20px 0;
+}
+
+#SearchHistoryContainer {
+  margin-top: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+/* Popups */
+.popup {
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  z-index: 100;
+}

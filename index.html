@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,14 +6,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>S.A.Y,Virtual assistant</title>
-  <link rel="shortcut icon" href="/assets/logo.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/logo.jpg" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
   <link rel="stylesheet" href="style2.css">
+  
 </head>
 
-<body> 
+<body>
+  
 
-  <img src="/assets/logo.jpg" alt="Logo" id="logo" />
+    <img src="assets/logo.jpg" alt="Logo" class="logo" />
+  <h1 class="textimage"> <span class="fs"> I'm </span> <span id="name" class="fs" style="color:rgb(42,183,235)"  > S.A.Y </span> <span class="fs">, </span><br><span class="es">Your</span> <span id="va" class="es" style="color:rgb(39,185,152)"> Virtual Assistant</span></h1>
+
+  
+  
+  
+  
   <div class="mainbox">
     <input type="checkbox" id="checkbox">
     <div class="btn_one">
@@ -50,25 +60,28 @@
  </div>
   <div id="pbox4" class="popup">
        <p>You can provide feedback by sending an email or comment.</p> 
+       <a href="https://docs.google.com/forms/d/e/1FAIpQLSe62W2fpQe5CVQy42Dn-JJap_W3eVb9fPXDNsSrm12GL2-gTA/viewform?usp=dialog"><button type="submit" class="feedbackbtn">CLICK</button>  </a>
  </div>
 
-  <h1>I'm <span id="name"> S.A.Y </span>, Your <span id="va">Virtual Assistant</span></h1>
+  
 
-  <img src="/assets/voice.gif" alt="voice" id="voice">
+  <img src="assets/voice.gif" alt="voice" id="voice">
   <div id="searchContainer">
-    <button id="btn"><img src="/assets/mic.svg" alt="mic"><span id="content"> </span> </button>
+    <button id="btn"><img src="assets/mic.svg" alt="mic"><span id="content"> </span> </button>
   </div>
-
-
+  
+<input type="checkbox" class="checkbox2" id="checkbox2">
   <div id="wrapper">
+    <lable for="checkbox2">
+      <image src="assets/history.png" id="history123">
+    </lable>
     <input type="text" id="searchInput" placeholder="Type your command here..." />
     <button id="searchBtn">Search</button>
   </div>
 
-  <body>
-
-    <div id="SearchHistoryContainer" style="color: white;"></div>
+ 
+     <div id="bottom2"><div id="SearchHistoryContainer" style="color: white;"></div></div> 
     <script src="script2.js"></script>
-  </body>
+  
 </body>
 </html>
